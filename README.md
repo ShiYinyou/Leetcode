@@ -10,7 +10,7 @@ Leetcode
 └── biweekly
 ```
 
-All program files will be written in `.ipynb` files.
+Use the leetcode extensions in VScode to generate the code files.  
 
 ## For basic_algotithm
 
