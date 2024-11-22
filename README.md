@@ -4,10 +4,18 @@ Study algorithms in Leetcode, collect templates, and record the attendance of we
 ``` 
 Leetcode
 ├── basic_algorithm
+│   ├── 各算法分类文件夹
+│   │   ├── _模板.py
+│   │   └── 各习题.py
 │   └── 基础算法.md
 ├── weekly
-│
+│   └── 各竞赛期号文件夹
+│       ├── 赛中解答.ipynb
+│       └── 赛后复盘各题.py
 └── biweekly
+    └── 各竞赛期号文件夹
+        ├── 赛中解答.ipynb
+        └── 赛后复盘各题.py
 ```
 
 Use the leetcode extensions in VScode to generate the code files.  
