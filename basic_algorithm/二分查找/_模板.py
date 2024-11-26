@@ -49,3 +49,7 @@ class Template:
         # >x  : 转化为>=(x+1)，调用lower_bound(nums,x+1)
         # <x  : 转化为>=(x)-1，调用lower_bound(nums,x)-1
         # <=x : 转化为>=(x+1)-1，调用lower_bound(nums,x+1)-1
+
+        ### python bisect第三方库
+        # bisect.bisect 和 bisect.bisect_right 返回大于x的第一个下标
+        # bisect.bisect_left 返回大于等于x的第一个下标，即lower_bound
