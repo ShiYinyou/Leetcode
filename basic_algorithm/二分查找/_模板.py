@@ -47,5 +47,5 @@ class Template:
         ### 解决四种类型问题（>=、>、<、<=）
         # >=x : 直接调用lower_bound(nums,x)
         # >x  : 转化为>=(x+1)，调用lower_bound(nums,x+1)
-        # <x : 转化为>=(x)-1，调用lower_bound(nums,x)-1
-        # <=x  : 转化为>=(x+1)-1，调用lower_bound(nums,x+1)-1
+        # <x  : 转化为>=(x)-1，调用lower_bound(nums,x)-1
+        # <=x : 转化为>=(x+1)-1，调用lower_bound(nums,x+1)-1
