@@ -12,6 +12,19 @@
 #         self.next = next
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
+        """
+        基础问题，按照模板即可
+
+        时间复杂度：O(n)
+        空间复杂度：O(1)
+        """
+        pre = None
+        cur = head
+        while cur:
+            nxt = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nxt
+        return pre
 # @lc code=end
 
