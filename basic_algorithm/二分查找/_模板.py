@@ -51,7 +51,7 @@ class Template:
         # >=x : 直接调用lower_bound(nums,x)
         # >x  : 转化为>=(x+1)，调用lower_bound(nums,x+1)
         # <x  : 转化为>=(x)-1，调用lower_bound(nums,x)-1
-        # <=x : 转化为>=(x+1)-1，调用lower_bound(nums,x+1)-1
+        # <=x : 转化为>x-1，进一步转化为>=(x+1)-1，调用lower_bound(nums,x+1)-1
 
         ### python bisect第三方库
         # bisect.bisect 和 bisect.bisect_right 返回大于x的第一个下标
