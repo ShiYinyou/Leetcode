@@ -4,17 +4,17 @@ Study algorithms in Leetcode, collect templates, and record the attendance of we
 ``` 
 Leetcode
 ├── basic_algorithm
-│   ├── 各算法分类文件夹
-│   │   ├── _模板.py
-│   │   └── 各习题.py
-│   └── 基础算法.md
+│   ├── 基础算法.md
+│   └── 各算法分类文件夹
+│       ├── _模板.py
+│       └── 各习题.py
 ├── weekly
 │   └── 各竞赛期号文件夹
-│       ├── 赛中解答.ipynb
+│       ├── 赛中解答.md
 │       └── 赛后复盘各题.py
 └── biweekly
     └── 各竞赛期号文件夹
-        ├── 赛中解答.ipynb
+        ├── 赛中解答.md
         └── 赛后复盘各题.py
 ```
 
@@ -33,5 +33,3 @@ After the attendance of weekly competition, record how many problems solved when
 ## For biweekly
 
 After the attendance of biweekly competition, record how many problems solved when in competition, how did the problems solved, what the difficulties met, and the more optimal solution. Also, record the change of competition points after the competition.
-
-**This part is not started now.**
