@@ -1,8 +1,3 @@
-# @before-stub-for-debug-begin
-from python3problem143 import *
-from typing import *
-# @before-stub-for-debug-end
-
 #
 # @lc app=leetcode.cn id=143 lang=python3
 #
@@ -19,12 +14,36 @@ class Solution:
     def reorderList(self, head: Optional[ListNode]) -> None:
         """
         Do not return anything, modify head in-place instead.
-
-        结合中间节点和反转链表，将单链表拆成两个链表然后归并
-
-        时间复杂度：
-        空间复杂度：
-        """
         
+        结合 876 查找中间节点和反转链表，转化为两个链表后归并
+
+        时间复杂度：O(n)
+        空间复杂度：O(1)
+        """
+        slow = fast = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+        pre, cur = None, slow
+        while cur:
+            nxt = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nxt
+        head2 = pre
+        dummy = ListNode(next = head)
+        x = dummy
+        while head2:
+            x = x.next
+            if x == head2:
+                break
+            nxt = head2.next
+            head2.next = x.next
+            x.next = head2
+            x = x.next
+            head2 = nxt
+        if x.next != None:
+            x.next = None
+
 # @lc code=end
 
